@@ -5,7 +5,6 @@ import Title from '../Globals/Title';
 export default function Info() {
     return (
         <section className="py-5">
-
             <div className="container">
 
                 <Title title="Our Story"/>

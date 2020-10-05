@@ -5,9 +5,9 @@ require('dotenv').config({
 
 module.exports = {
     siteMetadata: {
-        title: `Gatsby Default Starter`,
+        title: `Coffee Shop`,
         description: `Coffees, cappucinos, martinis, espresso, right at your doorstep.`,
-        author: `@gatsbyjs`,
+        author: `Code Sector`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
