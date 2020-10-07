@@ -34,7 +34,6 @@ const Products = () => {
 
                             <div className="row">
                                 {data.products.edges.map(({node : product}) => {
-                                    console.log(product)
                                     return <Product key={product.id} product={product} />
                                 })}
                             </div>

@@ -63,7 +63,7 @@ export default class Menu extends Component {
                                 return (
                                     <div key={node.id} className="col-11 col-md-6 my-3 d-flex">
                                         <div>
-                                            <Img fixed={node.image.fixed}/>
+                                            <Img fixed={node.image ? node.image.fixed : ''}/>
                                         </div>
                                         
                                         <div className="flex-grow-1 px-3">
@@ -75,7 +75,7 @@ export default class Menu extends Component {
                                                     <small>${node.price}</small>
                                                 </h6>
                                                 <p className="text-muted">
-                                                    <small>{node.description.description}</small>
+                                                    <small>{node.description ? node.description.description.description : ''}</small>
                                                 </p>
                                             </div>
                                         </div>
