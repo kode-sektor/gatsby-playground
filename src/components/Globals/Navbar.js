@@ -58,6 +58,9 @@ export default class Navbar extends Component {
                                 <span className="snipcart-item-price">$0</span>
                             </button>
                         </li>
+                        <li>
+                        <button class="snipcart-customer-signin">My account</button>
+                        </li>
                     </ul>
                 </div>
             </nav>

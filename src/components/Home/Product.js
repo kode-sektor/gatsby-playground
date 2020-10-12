@@ -6,7 +6,7 @@ export default function Product({product}) {
     return (
         <div className="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto my-3">
             <div className="card" style={{minHeight : '100%'}}>
-                <img fluid={product.image.fluid} className="card-img-top"/>
+                <Img fluid={product.image.fluid} className="card-img-top"/>
                 <div className="card-body text-center">
                     <h5>{product.title}</h5>
                     <h6>$ {product.price}</h6>
@@ -18,19 +18,22 @@ export default function Product({product}) {
                         // For data-item-url, basically insert the page where this buy call-to-action button lives.
                         // In the project its localhost:8000 but live, it is https://romantic-lalande-cd15b1.netlify.app/
                         // Both work, but the latter is more appropriate
-                        data-item-image={product.image.fluid.src} data-item-url="romantic-lalande-cd15b1.netlify.app"
+                        data-item-image={product.image.fluid.src} data-item-url="/"
                         data-item-description="Dummy description"
 
                         // Responsible for inserting a text field (default custom type) if 
                         // data-item-custom1-options is not provided. User can engrave custom message on product
                         data-item-custom1-name="Coffee Variant"
 
+
+
                         >  
                         Add to Cart
                     </button>
 
                 </div>
-               
+
+
             </div>
 
         </div>
